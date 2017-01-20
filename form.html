@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Sign up form</title>
+</head>
+<body>
+<h1>Buat Account Baru1</h1>
+<form action="welcome.html" method="post">
+	<legend>Sign Up Form<legend>
+	<p>
+		<label for="first-name">First Name<br/></label>
+		<input id="first-name" name"firstName" type="text">
+	</p>
+	<p>
+		<label for="last-name">Last Name<br/></label>
+		<input id="last-name" name"lastName" type="text">
+	</p>
+	<p>
+		<label for="gender">Gender:<br/></label>
+		<input id="male-radio" type="radio" name="gender" value="male">
+		<label for="male-radio">Male<br/></label>
+		<input id="female-radio" type="radio" name="gender" value="female">
+		<label for="female-radio">Female<br/></label>
+		<input id="other-radio" type="radio" name="gender" value="other">
+		<label for="other-radio">Other</label>
+	</p>
+	<p>
+	<p>
+    <label for="nationality">Nationality<br/></label>
+    <input type="text" name="nationality" list="nations" />
+    <datalist id="nations">
+      <label for="suggestion">or pick one</label>
+      <select id="suggestion" name="altnations">
+        <option value="indonesia">Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="thailand">Thailand</option>
+        <option value="vietnam">Vietnam</option>
+      </select>
+    </datalist>
+	</p>
+	<p>
+	  <label for="languanges">Language Spoken:<br/></label>
+	  <input id="bahasa-indonesia-checkbox" type="checkbox" name="languanges" value="bahsa-indonesia">
+	  <label for="bahasa-indonesia-checkbox">Bahasa Indonesia<br/></label>
+	  <input id="english-checkbox" type="checkbox" name="languanges" value="english">
+	  <label for="english-checkbox">Englisg<br/></label>
+	  <input id="english-checkbox" type="checkbox" name="languanges" value="other">
+	  <label for="other-checkbox">Other<br/></label>
+	</p>
+	<p>
+		<label for="bio">Bio</label><br/>
+		<textarea rows="4"cols="50" name="bio"></textarea>
+	</p>
+	<p>
+	 <input type="submit" value="Submit">
+	</p>
+</form>
+</body>
+</html>
